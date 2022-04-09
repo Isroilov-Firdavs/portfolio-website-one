@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Fjalla+One&family=Inconsolata&family=Maven+Pro&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+.link{
+    margin: 70px 0;
+}
+
+/* Navigation menu */
+.navbar-brand {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+/* Home */
+.home {
+    background-color: #F0F5F9; 
+    padding: 150px 0 100px 0;
+}
+.main{
+    background-color: #F0F5F9; 
+    padding: 70px 0 100px 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main .content{
+    max-width: 800px;
+
+}
+.main .content h2{
+    color: #111;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.main .content h2 span{
+    font-size: 55px;
+    font-weight: 600;
+}
+.animated-text{
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+.animated-text h3{
+    color: green;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+
+.animated-text h3:nth-child(1){
+    animation: text-move 10s infinite;
+}
+
+@keyframes text-move{
+    0%{
+        margin-top: 0;
+    }25%{
+        margin-top: -70px;
+    }
+    50%{
+        margin-top: -140px;
+    }
+    75%{
+        margin-top: -70px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+.abouteMe{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.media-icons a{
+    color: blue;
+    font-size: 25px;
+    margin-right: 30px;
+}
+.media-icons a:hover{
+    color: #262676;
+}
+
+.title{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-title{
+    position: relative;
+    color: #262676;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+.img-card{
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+}
+
+ .img-card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;   
+}
+.content .col-right{
+    position: relative;
+    width: 450px;
+    
+}
+
+
+.content .content-title{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.content .paragraph-text{
+    font-size: 20px;
+    font-weight: 500;
+}
+.bar{
+    margin-top: 25px;
+}
+.services  p{
+    width: 80%;
+}
+
+
+.services .card{
+    background: #fff;
+    box-shadow:  0 5px 25px rgba( 1 1 1  /15%);
+    border-radius: 10px;
+
+}
+.services .card .services-icon{
+    font-size: 120px;
+    text-align: center;
+    transition: transform .5s ease;
+}
+.services .card .services-icon a{
+    color: blue ;
+}
+
+.services .card .services-icon:hover{
+    transform: translateY(-10px);
+}
+
+.services .card .info , p{
+    text-align: center;
+}
+
+.services .card .info h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin: 10px;
+}
+.work  .card{
+    width: 340px;
+    margin: 15px;
+}
+
+.work  .img-card{
+    margin-top: 25px;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.work .img-card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.work .img-card img:hover{
+    transform: scale(1.2);
+}
+.contact .row .card {
+    width: 240px;
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba( 1 1 1  /15%);
+    border-radius: 10px;
+}
+
+.contact .card .contact-icon{
+    color: blue;
+    font-size: 60px;
+    text-align: center;
+    transition: transform .5s ease;
+}
+.contact  .card:hover .contact-icon{
+    transform: translateY(-10px);
+}
+.contact .card .info h3{
+    color: #111;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
+}
+.contact .card .info span{
+    color: #666;
+    text-align: center;
+    font-weight: 500;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba( 1 1 1  /15%);
+}
+.contact-form h3{ 
+    text-align: center;
+    color: #252562;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.contact-form .box-input {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact-form .box-input input,
+.contact-form .box-input textarea{
+    color: #111;
+    width: 100%;
+    padding: 10px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #111;
+    border-radius: 5px;
+    resize:none;
+}
+
+
+
+.footer{
+    margin-top: 50px;
+    background-color: #252562;
+    color: #fff;
+    padding: 10px;
+}
+.footer span{
+    margin-left: -10px;
+}
+
+/*======See More======*/
+.bush-joy{
+    margin-top: 20px;
+}
+.img-see img{
+    border-radius: 25px;
+}
+.name{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+ul li{
+    list-style: none;
+    padding: 15px 0;
+}
+ul li strong span{
+    width: 100px;
+}
+
+
+
+
+
